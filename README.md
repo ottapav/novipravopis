@@ -5,7 +5,7 @@ Jednoduchá webová aplikace, která převede český text podle nového pravopi
 > Po obojetných souhláskách (**b, f, l, m, p, s, v, z**) se píše **měkké i/í**.
 > Výjimku tvoří cizí slova.
 
-Text napíšete (nebo vložíte) do levého pole, kliknete na **Převést na nový pravopis** a výsledek se
+Text napíšete (nebo vložíte) do levého pole, kliknete na **Převést** a výsledek se
 objeví v pravém poli. Změněná písmena jsou zvýrazněná (zvýraznění jde vypnout), cizí slova, která
 zůstala beze změny, jsou označená tečkovaným podtržením.
 
