@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nový pravopis</title>
+  <meta name="description" content="Převod českého textu na nový pravopis: po obojetných souhláskách se píše měkké i.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Nový pravopis</h1>
+    <p class="lead">
+      Po obojetných souhláskách <strong>b, f, l, m, p, s, v, z</strong> se píše
+      <strong>měkké i</strong>. Výjimku tvoří cizí slova.
+    </p>
+  </header>
+
+  <main class="panes">
+    <section class="pane">
+      <div class="pane-head">
+        <label for="input" class="pane-title">Původní text</label>
+        <button type="button" id="sample" class="link">Vložit ukázku</button>
+      </div>
+      <textarea id="input" placeholder="Sem napište nebo vložte český text…" autofocus></textarea>
+    </section>
+
+    <section class="pane">
+      <div class="pane-head">
+        <span id="output-title" class="pane-title">Nový pravopis</span>
+        <label class="toggle">
+          <input type="checkbox" id="hl" checked>
+          Zvýraznit změny
+        </label>
+      </div>
+      <div id="output" class="output" role="region" aria-labelledby="output-title" aria-live="polite"
+           data-placeholder="Tady se objeví výsledek."></div>
+    </section>
+  </main>
+
+  <div class="actions">
+    <button type="button" id="convert" class="primary">Převést na nový pravopis</button>
+    <button type="button" id="copy" disabled>Kopírovat výsledek</button>
+    <button type="button" id="clear">Vymazat</button>
+    <span id="status" class="status" role="status"></span>
+  </div>
+
+  <footer class="foot">
+    <p>
+      Cizí slova (např. <em>systém, symbol, analýza, psychologie, fyzika</em>) zůstávají beze změny
+      a ve zvýrazněném výsledku jsou označena tečkovaným podtržením. Seznam výjimek je v souboru
+      <code>app/exceptions.py</code>. Zkratka: Ctrl/⌘ + Enter.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
