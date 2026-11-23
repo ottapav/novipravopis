@@ -1,4 +1,4 @@
-# Nový pravopis
+# Noví pravopis
 
 Jednoduchá webová aplikace, která převede český text podle nového pravopisného pravidla:
 
@@ -9,7 +9,7 @@ Text napíšete (nebo vložíte) do levého pole, kliknete na **Převést na nov
 objeví v pravém poli. Změněná písmena jsou zvýrazněná (zvýraznění jde vypnout), cizí slova, která
 zůstala beze změny, jsou označená tečkovaným podtržením.
 
-| Původní text | Nový pravopis |
+| Původní text | Noví pravopis |
 |--------------|---------------|
 | byl, být, mýt | bil, bít, mít |
 | slyšet, mysl, sýr | slišet, misl, sír |

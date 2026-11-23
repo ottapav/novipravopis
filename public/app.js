@@ -14,7 +14,9 @@
   const SAMPLE =
     'Byl jsem u slyšení, kde se mluvilo o obyvatelích našeho města. ' +
     'Vysoký sýr leží na stole, ale mysl se mi toulá jinam.\n\n' +
-    'Náš systém analýzy nám pomohl pochopit symboly, psychologii i fyziku.';
+    'Náš systém analýzy nám pomohl pochopit symboly, psychologii i fyziku.\n\n' +
+    'Na stole leží mapy, zuby a kovy, vedle nich stojí malý a zdravý kluk se psy. ' +
+    'Brzy přijdou ženy z hory, ale hobby a party nám nikdo nevezme.';
 
   let lastText = '';
 

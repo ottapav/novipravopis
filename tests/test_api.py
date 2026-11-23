@@ -46,7 +46,7 @@ def test_prilis_velke_telo_vrati_413():
 def test_staticke_soubory_a_healthcheck():
     index = client.get("/")
     assert index.status_code == 200
-    assert "Nový pravopis" in index.text
+    assert "Noví pravopis" in index.text
     assert client.get("/app.js").status_code == 200
     assert client.get("/style.css").status_code == 200
     assert client.get("/healthz").text == "ok"

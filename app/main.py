@@ -1,4 +1,4 @@
-"""Webový server aplikace Nový pravopis (FastAPI)."""
+"""Webový server aplikace Noví pravopis (FastAPI)."""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ PUBLIC_DIR = Path(__file__).resolve().parent.parent / "public"
 
 CSP = "default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
 
-app = FastAPI(title="Nový pravopis", docs_url=None, redoc_url=None, openapi_url=None)
+app = FastAPI(title="Noví pravopis", docs_url=None, redoc_url=None, openapi_url=None)
 
 
 class ConvertRequest(BaseModel):

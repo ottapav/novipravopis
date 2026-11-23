@@ -118,3 +118,30 @@ def test_slovo_s_vice_zmenami_se_pocita_jednou():
 
 def test_none_je_prazdny_text():
     assert convert(None)["text"] == ""
+
+
+@pytest.mark.parametrize(
+    "src,expected",
+    [
+        ("mapy", "mapi"),
+        ("zuby", "zubi"),
+        ("kovy", "kovi"),
+        ("psy", "psi"),
+        ("brzy", "brzi"),
+        ("Brzy", "Brzi"),
+        ("malý", "malí"),
+        ("zdravý", "zdraví"),
+    ],
+)
+def test_slova_s_y_na_konci_se_meni(src, expected):
+    assert out(src) == expected
+
+
+@pytest.mark.parametrize("word", ["ženy", "hory", "party", "dobrý", "hobby", "baby"])
+def test_slova_s_y_na_konci_beze_zmeny(word):
+    # po jiné souhlásce než obojetné, nebo cizí slovo (hobby, baby)
+    assert out(word) == word
+
+
+def test_nazev_stranky():
+    assert out("Nový pravopis") == "Noví pravopis"
